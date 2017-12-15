@@ -9,6 +9,7 @@ import { JorenComponent } from './joren/joren.component';
 import { BasComponent } from './bas/bas.component';
 import { WcComponent } from './wc/wc.component';
 import { VervoerComponent } from './vervoer/vervoer.component';
+import { NavSecondComponent } from './navSecond/navSecond.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { VervoerComponent } from './vervoer/vervoer.component';
     JorenComponent,
     BasComponent,
     WcComponent,
-    VervoerComponent
+    VervoerComponent,
+    NavSecondComponent
   ],
   imports: [
     BrowserModule,
