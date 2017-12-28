@@ -1,7 +1,13 @@
-<!--Panel-->
-<div class="card card-body">
-    <h4 class="card-title">Dichtstbijzijnde WC</h4>
-    <p class="card-text">afstand: {{data.distance}}m </p>
-    <p class="card-text">adres: {{data.straat}} {{data.huisnr}} {{data.postcode}} {{data.district}}</p>
+<!--Card-->
+<div class="card">
+    <div class="card-header">Dichtstbijzijnde WC
+    </div>
+        
+    <div class="card-block">
+        <ul class="list-group" style="text-align:center">
+            <li class="list-group-item">afstand: {{data.distance}}m</li>
+            <li class="list-group-item">adres: {{data.straat}} {{data.huisnr}} {{data.postcode}} {{data.district}}</li>
+        </ul>
+    </div>
 </div>
-<!--/.Panel-->
+<!--/.Card-->

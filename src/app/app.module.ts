@@ -18,6 +18,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { buurtWcComponent } from './buurtWc/buurtWc.component';
 import { StraatWcComponent } from './straatWc/straatWc.component';
 import { RolstoelWcComponent } from './rolstroelWc/rolstoelWc.component';
+import { StraatWcBalkComponent } from './straatWcBalk/straatwcBalk.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { RolstoelWcComponent } from './rolstroelWc/rolstoelWc.component';
     DichtsteWcBalkComponent,
     buurtWcComponent,
     StraatWcComponent,
-    RolstoelWcComponent
+    RolstoelWcComponent,
+    StraatWcBalkComponent
   ],
   imports: [
     BrowserModule,
