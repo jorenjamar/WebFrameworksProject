@@ -5,22 +5,26 @@ import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { HomeComponent } from './home/home.component';
 import { RouterModule } from '@angular/router';
-import { JorenComponent } from './joren/joren.component';
-import { BasComponent } from './bas/bas.component';
+import { GroupComponent } from './group/group.component';
 import { WcComponent } from './wc/wc.component';
 import { VervoerComponent } from './vervoer/vervoer.component';
 import { NavSecondComponent } from './navSecond/navSecond.component';
+import { UitlegComponent } from './uitleg/uitleg.component';
+import { UitlegBas } from './uitlegBas/uitlegBas.component';
+import { UitlegJoren } from './uitlegJoren/uitlegJoren.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
     HomeComponent,
-    JorenComponent,
-    BasComponent,
+    GroupComponent,
     WcComponent,
     VervoerComponent,
-    NavSecondComponent
+    NavSecondComponent,
+    UitlegComponent,
+    UitlegBas,
+    UitlegJoren
   ],
   imports: [
     BrowserModule,
