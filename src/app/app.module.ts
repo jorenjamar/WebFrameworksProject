@@ -13,6 +13,11 @@ import { UitlegBas } from './uitlegBas/uitlegBas.component';
 import { UitlegJoren } from './uitlegJoren/uitlegJoren.component';
 import { DichtsteWcComponent } from './dichtsteWc/dichtsteWc.component';
 import { DichtsteWcBalkComponent } from './dichtsteWcBalk/dichtsteWcBalk.component';
+import { WcService } from './services/wc.service';
+import { HttpClientModule } from '@angular/common/http';
+import { buurtWcComponent } from './buurtWc/buurtWc.component';
+import { StraatWcComponent } from './straatWc/straatWc.component';
+import { RolstoelWcComponent } from './rolstroelWc/rolstoelWc.component';
 
 @NgModule({
   declarations: [
@@ -26,20 +31,27 @@ import { DichtsteWcBalkComponent } from './dichtsteWcBalk/dichtsteWcBalk.compone
     UitlegBas,
     UitlegJoren,
     DichtsteWcComponent,
-    DichtsteWcBalkComponent
+    DichtsteWcBalkComponent,
+    buurtWcComponent,
+    StraatWcComponent,
+    RolstoelWcComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     RouterModule.forRoot([
       {path: "home", component : HomeComponent},
       {path: "vervoer", component : VervoerComponent},
       {path: "dichtsteWc", component : DichtsteWcComponent},
+      {path: "buurtWc", component : buurtWcComponent},
+      {path: "rolstoelWc", component : RolstoelWcComponent},
+      {path: "straatWc", component: StraatWcComponent},
       {path: "", redirectTo: "home", pathMatch: "full"},
     ], {useHash: true}),
     MDBBootstrapModule.forRoot()
   ],
   schemas: [ NO_ERRORS_SCHEMA ],
-  providers: [],
+  providers: [WcService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
