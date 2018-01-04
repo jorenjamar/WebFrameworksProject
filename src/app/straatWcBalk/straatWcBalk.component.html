@@ -1,7 +1,11 @@
-<input type="text" class = "form-control" [(ngModel)]="Search">
+<form id="filterStraat">
+<input type="text" placeholder="zoek straat" [(ngModel)]="term" />
+</form>
+
+
 <!--Card-->
-<div class="card">
-    <div class="card-header">Openbare Toiletten in {{data.straat}}
+<div class="card" *ngIf="data">
+    <div class="card-header">Openbare Toiletten
     </div>
     
     <div class="card-block">
@@ -13,9 +17,9 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <th scope="row">{{data.id}}</th>
-                    <td>{{data.straat}} {{data.huisnr}} {{data.postcode}} {{data.district}}</td>
+                <tr *ngFor="let wc of data">
+                    <th scope="row">{{wc.id}}</th>
+                    <td>{{wc.straat}} {{wc.huisnr}} {{wc.postcode}} {{wc.district}}</td>
                 </tr>
             </tbody>
         </table>
