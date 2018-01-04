@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { WcService, IWc } from "../services/wc.service";
+import { WcService, IWc } from "../../services/wc.service";
 import { OnInit } from "@angular/core/src/metadata/lifecycle_hooks";
 
 

@@ -1,14 +1,14 @@
 import { Component } from "@angular/core";
-import { WcService, IWc } from "../services/wc.service";
+import { WcService, IWc } from "../../services/wc.service";
 import { OnInit } from "@angular/core/src/metadata/lifecycle_hooks";
 
 
 @Component({
-    selector: "app-rolstoelWc",
-    templateUrl: "./rolstoelWc.component.html"
+    selector: "app-buurtWc",
+    templateUrl: "./buurtWc.component.html"
 })
 
-export class RolstoelWcComponent implements OnInit{
+export class buurtWcComponent implements OnInit{
     data : IWc;
     
     constructor(private service : WcService){}
@@ -16,4 +16,5 @@ export class RolstoelWcComponent implements OnInit{
     ngOnInit(){
         this.service.getLijst().subscribe(result => this.data = result);
     }
+    
 }
